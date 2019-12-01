@@ -19,12 +19,12 @@ import org.springframework.beans.factory.annotation.Autowired;
  *
  * @author TAM
  */
-public class crawl {
+public class crawlerRedisData {
     @Autowired
     RedisRepository redisRepository;
     
-    public Boolean crawlerAllComic(int sl) throws IOException {
-        sl =50;
+    public Boolean crawlerAllComic() throws IOException {
+        int sl =50;
         Boolean cont = true;
         String url = "https://truyenfull.vn/danh-sach/truyen-hot/";
         String nextUrl = null;
